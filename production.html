@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Продукция Alpro - Алюминиевые профильные системы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                        "graphite": "#181111",
+                        "text-secondary": "#666666",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d1d1d1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ec1313;
+        }
+
+        .card-hover-effect {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.02);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-graphite dark:text-white antialiased">
+    <!-- Top Navbar -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-[#181111]/90 backdrop-blur-md border-b border-[#f4f0f0] dark:border-gray-800">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 gap-8">
+                <!-- Logo -->
+                <div class="flex items-center gap-2 shrink-0 cursor-pointer">
+                    <div class="size-8 text-primary">
+                        <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-graphite dark:text-white text-2xl font-black tracking-tighter">Alpro</h2>
+                </div>
+                <!-- Nav Links (Desktop) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    
+                    <a href="./index.html" class="text-sm font-bold text-graphite dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"> Главная </a>
+                    <a class="text-graphite"
+                        href="./about.html">О компании</a>
+                    <a class="text-primary text-sm font-bold" href="./production.html">Продукция</a>
+                    <a class="text-graphite dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                        href="./contacts.html">Контакты</a>
+                </nav>
+                <!-- Search & Actions -->
+                <div class="flex items-center gap-4 flex-1 justify-end">
+                    <button
+                        class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-red-700 transition-all text-white text-sm font-bold shadow-lg shadow-red-500/20">
+                        <span>Скачать каталог</span>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-graphite dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Breadcrumbs -->
+            <nav aria-label="Breadcrumb" class="flex mb-6">
+                <ol class="flex items-center space-x-2">
+                    <li>
+                        <a class="text-text-secondary hover:text-primary text-sm font-medium transition-colors"
+                            href="#">Главная</a>
+                    </li>
+                    <li>
+                        <span class="text-text-secondary/50 text-sm">/</span>
+                    </li>
+                    <li>
+                        <span aria-current="page"
+                            class="text-graphite dark:text-white text-sm font-semibold">Продукция</span>
+                    </li>
+                </ol>
+            </nav>
+            <!-- Page Heading -->
+            <div class="mb-12">
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-black text-graphite dark:text-white tracking-tight mb-4">
+                    Продукция Alpro
+                </h1>
+                <p class="text-lg text-text-secondary dark:text-gray-400 max-w-3xl leading-relaxed">
+                    Инновационные алюминиевые системы для современной архитектуры. Надежность, энергоэффективность и
+                    эстетика в каждом профиле.
+                </p>
+            </div>
+            <!-- Filters & Navigation -->
+            <div
+                class="sticky top-20 z-40 bg-background-light dark:bg-background-dark py-4 mb-8 -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="px-6 py-2.5 rounded-full bg-primary text-white text-sm font-bold shadow-lg shadow-red-500/20 transition-transform active:scale-95">
+                        Все
+                    </button>
+                    <button
+                        class="px-6 py-2.5 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-graphite dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-colors">
+                        Алюминиевые системы – Термо
+                    </button>
+                    <button
+                        class="px-6 py-2.5 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-graphite dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-colors">
+                        Алюминиевые системы – Эконом
+                    </button>
+                    <button
+                        class="px-6 py-2.5 rounded-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-graphite dark:text-gray-300 text-sm font-medium hover:border-primary hover:text-primary transition-colors">
+                        Раздвижные системы
+                    </button>
+                </div>
+            </div>
+            <!-- Product Catalog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
+                <!-- Card 1 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        </div>
+                        <img alt="Cross section of aluminium window frame showing thermal break insulation"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="Technical cross section of Alpro Thermo 75 profile"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLHisAEmFqB5Otv8ig1oRMewRaek9AL9kunFFjknEsXdBPDQQDgzIHAcT2Ap-tRMBPfDyrgui4OSEehE-FUMdjL2De3W4wioykaI9L2zXmTMVRMRXRrCMw3xtLJbmqPUuDzahqX58X-bGMM9h8XWSopqZJMrGKNU83RdAsOOfag6zh7_qtLbdhI37QZ9IADRAIWAN9q4E1am3BUTKk7mYJMghu8y1pUknWmBjYMwWSq7Zb9f4UeEjaaDOSiNOTA89GMjc2-Bawr2E" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary uppercase tracking-wider">
+                            Термо
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                Alpro Thermo 75</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Система с повышенной термоизоляцией для фасадного остекления. Идеально для энергоэффективных
+                            зданий.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Uf = 1.2 W/m²K</span>
+                            <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <img alt="Modern aluminium window frame detail against light background"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="Close up of Alpro Eco 45 window frame"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP0B0352bu8qP9BPwIEfgd91bF58y3hTJXHt67lGe2tTwymisjKEhW2O-Y5dehpuCB_903y2QWZiDpnSYFMvWJDWM4TsRnyqwHv296eh8TELO_447PclWjYv_nWwc4r86NAN9amQMJLhyundPleYSXjSU83ef-nKroHSggAFv5_q3vZEZYOPz7pQbHN0wI5Y7snBUSMRqmE3wYdcFtHCMCDgFBcqW_9tPYVoiHdzwNMEe56SVDRHBCArM7eE5t-6A4o9wxh7XPaTk" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Эконом
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                Alpro Eco 45</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Базовое решение для внутренних перегородок и остекления неотапливаемых помещений. Легкость
+                            монтажа.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Глубина: 45мм</span>
+                           <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <img alt="Large sliding glass door opening to a patio"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="SlideMaster v2 sliding door system in context"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfSIWIILNf8Vp0C2qcZOGgSGRLobM38UJsCnmwlovW-qFeeXQDaanpUrjhBTkjDg2At3J2UYglZH-3ciE0Rr2KDJuo3PWJk2tyfhwNaLpKCT4fP3c5b_2wDPmfvAogTzJUGYcPpw_lMHlWdXgZFVqL1SIuzVI-0pcRJwP7WlHVC2SwtblMlYDD15SuEU0ubHTctn4K81njG0TnnOCddMDUdzTiQy63HHv_F7_324h42swYTuqGFpL-NrR0OihrAeMruDz9qooD7-M" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-blue-500 uppercase tracking-wider">
+                            Раздвижные
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                SlideMaster v2</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Панорамные раздвижные двери для террас с плавным ходом. Максимальная светопрозрачность.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Max вес: 400кг</span>
+                           <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <img alt="High rise building with glass facade reflecting sky"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="Facade Pro 100 system on a modern skyscraper"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCePQN8btWbu5Oft6tObgE89OkN455UVmipPKE0DLwtrDbGZDeOw5AfSUad1k06j34TwU3J6UaFQUlPL7PgkTJx9ZgO5ZYxtGumA2xRqkwo8_UO_-pu-g8mr8xwDGrSsAlrQuKtuVz1BgsO5qpILNP3p3CY5qc0A7LynhKC2QlYGexfkINt2ZvMqKqG9cOkdhKu52WniqhMVBzveusV31wsamuNzkkOSPVRZH_pF0tUYXWP-AWQZn6Q-5C3DEr9cmqChQCcgahr1KY" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary uppercase tracking-wider">
+                            Фасад
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                Facade Pro 100</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Сточено-ригельная система для сплошного остекления фасадов высотных зданий.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Ширина: 50мм</span>
+                           <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <img alt="Interior office partition wall made of glass and aluminum"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="Interior Wall 30 system for office spaces"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoeR1BSmedi0NAsJHp-IVWXLV6NOWcbG58g9YhVFu4HQme7MWONqylXJ1cw1qq_K6dglaiHmKiLTmNyZ_vu_6a6CLr3AXl3_bZp2Dksx0NdsaB-WyBceUHp_Bdy2ODOmW2TJCEQPoqZiCLJMFqWNpRa0f96ImDrJK2neBP1ZilvKZzJmECzVOP5BXOSFZ-lfwYkWybfaO0B3pz8rqoCsiOsSb4ctSG5gXIF-H4CAaff7Aih4fmJT2FkcrUMNxZsl-U-wYZ_6Lhkks" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Интерьер
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                Interior Wall 30</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Система интерьерных перегородок для зонирования офисного пространства.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Звукоизоляция: 40dB</span>
+                           <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="group card-hover-effect flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="relative h-64 overflow-hidden bg-gray-100 dark:bg-gray-900 flex items-center justify-center p-8">
+                        <img alt="Construction worker installing aluminum window frame"
+                            class="w-full h-full object-cover mix-blend-multiply dark:mix-blend-normal transform group-hover:scale-105 transition-transform duration-500 ease-out"
+                            data-alt="Installation process of Window Sys 60"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB-wFstSEUKcwy_oaz6fSrHBKIJmTQoHKNid9QPq-h1O0TyA-NajKuOWDFRoo60DWP89_p1DM-QLx5No2nCVhgt7woGrUCjTps9yRbP1MrSO5Geqp_fgYH0I7mdszRKUDBYrV_3dvD20uzmAyly_u1E8XHJ5IUeE2nwczy8PQr3p0S5r4dFzhXDVCO5GpknH8CpNocxnS6sFYAyvS7cW3S2wGEgYyXa5NMFU4ysheTdbEieFfKyznD_XTcRLujQXoKwPjcT-VnPBo" />
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 dark:bg-black/50 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-primary uppercase tracking-wider">
+                            Универсал
+                        </div>
+                    </div>
+                    <div class="flex flex-col flex-1 p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3
+                                class="text-xl font-bold text-graphite dark:text-white group-hover:text-primary transition-colors">
+                                Window Sys 60</h3>
+                            <span
+                                class="material-symbols-outlined text-gray-300 group-hover:text-primary transition-colors">arrow_outward</span>
+                        </div>
+                        <p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6 line-clamp-2">
+                            Классическая оконно-дверная система с терморазрывом. Универсальное решение для любого
+                            проекта.
+                        </p>
+                        <div
+                            class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-700 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-gray-400">Монтажная: 60мм</span>
+                           <a href="./detail-product.html"
+                                class="text-sm font-bold text-graphite dark:text-white group-hover:text-primary transition-colors flex items-center gap-1">
+                                Подробнее
+                                <span
+                                    class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">chevron_right</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Call to Action Section -->
+    <section class="bg-[#181111] dark:bg-black py-20 relative overflow-hidden">
+        <!-- Abstract Decoration -->
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2">
+        </div>
+        <div class="max-w-[960px] mx-auto px-4 sm:px-6 relative z-10 text-center">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                Поддержка
+            </div>
+            <h2 class="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">
+                Нужна помощь с выбором?
+            </h2>
+            <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto">
+                Наши инженеры помогут подобрать идеальную алюминиевую систему под технические требования вашего проекта.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button
+                    class="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-red-600 text-white rounded-xl font-bold text-lg transition-all shadow-xl shadow-red-900/20 transform hover:-translate-y-1">
+                    Получить консультацию
+                </button>
+                <button
+                    class="w-full sm:w-auto px-8 py-4 bg-transparent border border-gray-700 hover:border-white text-white rounded-xl font-bold text-lg transition-all">
+                    Связаться с отделом продаж
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#110a0a] text-white pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="size-8 text-primary">
+                            <span class="material-symbols-outlined !text-4xl">hexagon</span>
+                        </div>
+                        <span class="text-2xl font-extrabold tracking-tight">Alpro</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Ведущий производитель алюминиевого профиля в России. Инновации, качество и надежность с 2010
+                        года.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors"
+                            href="#">
+                            <!-- Social Icon placeholder using text -->
+                            <span class="font-bold text-sm">VK</span>
+                        </a>
+                        <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors"
+                            href="#">
+                            <span class="font-bold text-sm">TG</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Продукция</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Алюминиевый профиль</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Оконные системы</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Дверные системы</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Фасадные системы</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Интерьерные решения</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Компания</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">О заводе</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Новости</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Карьера</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Сертификаты</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Контакты</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <span>
+                                г.Турсунзода,
+                                
+                                Об. Сешанбе</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            <a class="hover:text-white transition-colors" href="tel:+74950000000">+7 (495) 000-00-00</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            <a class="hover:text-white transition-colors" href="mailto:info@alpro.ru">info@alpro.ru</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">schedule</span>
+                            <span>Пн-Пт: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>© 2023 ООО «Алюмин Проф». Все права защищены.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-white transition-colors" href="#">Политика конфиденциальности</a>
+                    <a class="hover:text-white transition-colors" href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

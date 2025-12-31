@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>О нас - Alpro</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Theme Configuration -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec1313",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221010",
+            "text-main": "#181111",
+            "text-muted": "#6b7280",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"],
+            "body": ["Manrope", "sans-serif"],
+          },
+          borderRadius: {
+            "DEFAULT": "0.375rem",
+            "md": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          boxShadow: {
+            'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            'hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.01)',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased selection:bg-primary selection:text-white">
+  <div class="flex min-h-screen w-full flex-col overflow-x-hidden">
+    <!-- Header -->
+    <header
+        class="sticky top-0 z-50 w-full bg-white/90 dark:bg-[#181111]/90 backdrop-blur-md border-b border-[#f4f0f0] dark:border-gray-800">
+        <div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 gap-8">
+                <!-- Logo -->
+                <div class="flex items-center gap-2 shrink-0 cursor-pointer">
+                    <div class="size-8 text-primary">
+                        <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-graphite dark:text-white text-2xl font-black tracking-tighter">Alpro</h2>
+                </div>
+                <!-- Nav Links (Desktop) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    
+                    <a href="./index.html" class="text-sm font-bold text-graphite dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"> Главная </a>
+                    <a class="text-primary text-sm font-bold"
+                        href="./about.html">О компании</a>
+                    <a class="text-graphite" href="./production.html">Продукция</a>
+                    <a class="text-graphite dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors"
+                        href="./contacts.html">Контакты</a>
+                </nav>
+                <!-- Search & Actions -->
+                <div class="flex items-center gap-4 flex-1 justify-end">
+                    <button
+                        class="hidden sm:flex items-center justify-center rounded-lg h-10 px-6 bg-primary hover:bg-red-700 transition-all text-white text-sm font-bold shadow-lg shadow-red-500/20">
+                        <span>Скачать каталог</span>
+                    </button>
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 text-graphite dark:text-white">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="relative flex min-h-[85vh] w-full items-center justify-center overflow-hidden bg-gray-900">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent z-10"></div>
+          <div class="h-full w-full bg-cover bg-center bg-no-repeat transition-transform duration-[20s] hover:scale-105"
+            data-alt="Атмосферное фото цеха металлургического завода с искрами"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBtNKk2iwt2wXSXGYSWZhjUDA7PLp_jvyLx-jTylW5Hy-SWBVjJK3JdJxJNEtnSd833y4K5OQTpKb2Bau7hA986IBbwrWYiK5iz86cemjQi468dMiK0Vf5nbb9qykDJYUb4NM8vdjuBhscXxC5mjSIQhlM1qL5XHKKw8lbof6PyplBuBoo-ZieKSkFtOQNoBNpg5JmHZSGvya9bQdKk3M_vgzm_Nh2K9OMJ1tJMTrhoXJFK5V70a0Ab_05KVdDX7smylpGEm53nBb4");'>
+          </div>
+        </div>
+        <div class="layout-container relative z-20 flex w-full max-w-[1280px] flex-col px-6 lg:px-12">
+          <div class="max-w-3xl animate-fade-in-up">
+            <div
+              class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 backdrop-blur-sm">
+              <span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+              <span class="text-xs font-medium uppercase tracking-wider text-white">Инновации в металле</span>
+            </div>
+            <h1
+              class="font-display text-5xl font-black leading-[1.1] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[5rem]">
+              О компании <span class="text-primary">Alpro</span>
+            </h1>
+            <p class="mt-6 max-w-xl text-lg font-medium leading-relaxed text-gray-200 md:text-xl">
+              Лидеры в производстве алюминиевого профиля. Сочетание передовых технологий, опыта и бескомпромиссного
+              качества с 2005 года.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <button
+                class="flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white transition-all hover:bg-red-700 hover:shadow-lg hover:shadow-red-900/20">
+                Узнать больше
+              </button>
+              <button
+                class="flex h-12 items-center justify-center rounded-lg border border-white/30 bg-transparent px-8 text-base font-bold text-white backdrop-blur-sm transition-all hover:bg-white hover:text-black">
+                Наше портфолио
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- History Section -->
+      <section class="py-20 lg:py-32 bg-white dark:bg-background-dark">
+        <div class="layout-container mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div class="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+            <div class="flex flex-col gap-6 order-2 lg:order-1">
+              <h2 class="text-3xl font-black tracking-tight text-text-main dark:text-white md:text-4xl lg:text-5xl">
+                История пути к совершенству
+              </h2>
+              <div class="h-1 w-20 bg-primary rounded-full"></div>
+              <div class="space-y-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
+                <p>
+                  Мы начали свой путь с одной экструзионной линии в небольшом цеху. Сегодня <span
+                    class="font-bold text-text-main dark:text-white">Alpro</span> — это завод полного цикла с
+                  современными технологиями и командой из более чем 300 профессионалов.
+                </p>
+                <p>
+                  За годы работы мы модернизировали каждый этап производства: от подготовки сырья до анодирования и
+                  упаковки готовой продукции. Мы гордимся тем, что наш профиль используется в строительстве крупнейших
+                  объектов страны.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a class="group inline-flex items-center text-primary font-bold hover:text-red-700" href="#">
+                  Подробнее о пути
+                  <span
+                    class="material-symbols-outlined ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+              </div>
+            </div>
+            <div class="relative order-1 lg:order-2 group">
+              <div class="aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100 shadow-2xl">
+                <div class="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                  data-alt="Инженер проверяет качество алюминиевых профилей на заводе"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCAfbqnvqQAm4O-JA_TlDh1FWKAgS3Doq7yCqY1phMa71GCJa5ebgmzNeBXzbh7pGWTeVBktGoXs_3nm5GdLPfaHmselakF4NVAnvML5hWa3QQYbjdXKBX-pzEm_XCYJNBdbB1s6LB0ARagpaStLwgy8zI0tm6ir1Q-p1BWD1jTNm7-LTFzioZzBQfyeHV6Tv2v5QM_VnuzHm13XdKuSX_btVfc74XbbyDOYbM0-u56e3qm9oYjE4-nHe1ZMaF5RwWd3hmpovqoclw");'>
+                </div>
+              </div>
+              <!-- Decor element -->
+              <div
+                class="absolute -bottom-6 -left-6 -z-10 h-full w-full rounded-2xl border-2 border-gray-200 dark:border-gray-700">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stats Section -->
+      <section class="bg-background-light dark:bg-gray-900 py-20">
+        <div class="layout-container mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div class="mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-text-main dark:text-white">Производственные мощности</h2>
+          </div>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+            <!-- Stat Card 1 -->
+            <div
+              class="group relative overflow-hidden rounded-xl bg-white p-8 shadow-soft transition-all hover:-translate-y-1 hover:shadow-hover dark:bg-background-dark dark:border dark:border-gray-800">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <span class="material-symbols-outlined text-3xl">weight</span>
+              </div>
+              <p class="text-sm font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Алюминия в год</p>
+              <p class="mt-2 text-4xl font-black tracking-tight text-text-main dark:text-white">7,2 <span
+                  class="text-2xl font-bold text-gray-400">тыс. тонн</span></p>
+              <div class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full">
+              </div>
+            </div>
+            <!-- Stat Card 2 -->
+            <div
+              class="group relative overflow-hidden rounded-xl bg-white p-8 shadow-soft transition-all hover:-translate-y-1 hover:shadow-hover dark:bg-background-dark dark:border dark:border-gray-800">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <span class="material-symbols-outlined text-3xl">category</span>
+              </div>
+              <p class="text-sm font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Видов продукции
+              </p>
+              <p class="mt-2 text-4xl font-black tracking-tight text-text-main dark:text-white">100<span
+                  class="text-primary">+</span></p>
+              <div class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full">
+              </div>
+            </div>
+            <!-- Stat Card 3 -->
+            <div
+              class="group relative overflow-hidden rounded-xl bg-white p-8 shadow-soft transition-all hover:-translate-y-1 hover:shadow-hover dark:bg-background-dark dark:border dark:border-gray-800">
+              <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+              </div>
+              <p class="text-sm font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">Оборудование</p>
+              <p class="mt-2 text-3xl font-black tracking-tight text-text-main dark:text-white leading-tight">
+                Современное</p>
+              <div class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-300 group-hover:w-full">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Values Section -->
+      <section class="py-20 lg:py-32 bg-white dark:bg-background-dark overflow-hidden">
+        <div class="layout-container mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div class="mb-16 text-center max-w-2xl mx-auto">
+            <span class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Философия</span>
+            <h2 class="text-3xl font-black tracking-tight text-text-main dark:text-white md:text-4xl lg:text-5xl">Наши
+              ценности</h2>
+            <p class="mt-4 text-gray-600 dark:text-gray-300">Принципы, которые лежат в основе каждого метра
+              произведенного нами профиля.</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Value 1 -->
+            <div
+              class="group flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 transition-colors hover:bg-white hover:shadow-xl dark:hover:bg-gray-700">
+              <div
+                class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md text-primary group-hover:bg-primary group-hover:text-white transition-colors dark:bg-gray-700 dark:text-white dark:group-hover:bg-primary">
+                <span class="material-symbols-outlined text-3xl">verified</span>
+              </div>
+              <h3 class="text-xl font-bold text-text-main dark:text-white mb-3">Качество</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Многоступенчатый контроль на каждом
+                этапе производства гарантирует соответствие ГОСТ.</p>
+            </div>
+            <!-- Value 2 -->
+            <div
+              class="group flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 transition-colors hover:bg-white hover:shadow-xl dark:hover:bg-gray-700">
+              <div
+                class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md text-primary group-hover:bg-primary group-hover:text-white transition-colors dark:bg-gray-700 dark:text-white dark:group-hover:bg-primary">
+                <span class="material-symbols-outlined text-3xl">science</span>
+              </div>
+              <h3 class="text-xl font-bold text-text-main dark:text-white mb-3">Технологии</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Мы используем новейшие экструзионные
+                прессы и автоматизированные линии покраски.</p>
+            </div>
+            <!-- Value 3 -->
+            <div
+              class="group flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 transition-colors hover:bg-white hover:shadow-xl dark:hover:bg-gray-700">
+              <div
+                class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md text-primary group-hover:bg-primary group-hover:text-white transition-colors dark:bg-gray-700 dark:text-white dark:group-hover:bg-primary">
+                <span class="material-symbols-outlined text-3xl">handshake</span>
+              </div>
+              <h3 class="text-xl font-bold text-text-main dark:text-white mb-3">Надёжность</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Соблюдение сроков и обязательств перед
+                партнерами — наш безусловный приоритет.</p>
+            </div>
+            <!-- Value 4 -->
+            <div
+              class="group flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 dark:bg-gray-800 transition-colors hover:bg-white hover:shadow-xl dark:hover:bg-gray-700">
+              <div
+                class="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-md text-primary group-hover:bg-primary group-hover:text-white transition-colors dark:bg-gray-700 dark:text-white dark:group-hover:bg-primary">
+                <span class="material-symbols-outlined text-3xl">person_apron</span>
+              </div>
+              <h3 class="text-xl font-bold text-text-main dark:text-white mb-3">Подход</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Мы разрабатываем индивидуальные
+                матрицы под уникальные задачи каждого клиента.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Section -->
+      <section class="py-20 bg-background-light dark:bg-gray-900">
+        <div class="layout-container mx-auto max-w-[1280px] px-6 lg:px-12">
+          <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+            <div>
+              <h2 class="text-3xl font-black tracking-tight text-text-main dark:text-white">Галерея производства</h2>
+              <p class="mt-2 text-gray-600 dark:text-gray-400">Взгляните на наш процесс изнутри</p>
+            </div>
+            <button class="text-sm font-bold text-primary hover:text-red-700 inline-flex items-center">
+              Все фото
+              <span class="material-symbols-outlined ml-1 text-lg">arrow_outward</span>
+            </button>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[250px]">
+            <!-- Large Item -->
+            <div class="group relative md:col-span-2 md:row-span-2 overflow-hidden rounded-xl bg-gray-200">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Крупный план промышленных металлических конструкций"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLKyowIpCIGiFVx6k8cIs6-Nd9HI2V0nKg82HnHkscvO31yA92fbbfuxkrS9PMsjzEiQOj-VnQrXWSsfUc4ZP2QDkoiOdGdzLbHRKcwiNHDS56-IoZoABe1y0pv_c_p96JM1d_tlVUfvO7PyHCkUqzt8ICr36sogR4CMH6AKCYmOmLNnSQ_XaIh79zzxs3UeWHdTY5Ny-HmcU4K4M2-r3i_nA5EYMJd3k5yg8CsGjJjPkTV-jqItgpNtecu8lU8y4STzclUdWYPXM");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity">
+              </div>
+              <div
+                class="absolute bottom-6 left-6 translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <span class="text-sm font-bold text-primary">Цех №1</span>
+                <h3 class="text-xl font-bold text-white">Линия экструзии</h3>
+              </div>
+            </div>
+            <!-- Small Item 1 -->
+            <div class="group relative overflow-hidden rounded-xl bg-gray-200">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Склад готовой алюминиевой продукции"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLKyowIpCIGiFVx6k8cIs6-Nd9HI2V0nKg82HnHkscvO31yA92fbbfuxkrS9PMsjzEiQOj-VnQrXWSsfUc4ZP2QDkoiOdGdzLbHRKcwiNHDS56-IoZoABe1y0pv_c_p96JM1d_tlVUfvO7PyHCkUqzt8ICr36sogR4CMH6AKCYmOmLNnSQ_XaIh79zzxs3UeWHdTY5Ny-HmcU4K4M2-r3i_nA5EYMJd3k5yg8CsGjJjPkTV-jqItgpNtecu8lU8y4STzclUdWYPXM");'>
+              </div>
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+            </div>
+            <!-- Small Item 2 -->
+            <div class="group relative overflow-hidden rounded-xl bg-gray-200">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Автоматизированное оборудование для обработки металла"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLKyowIpCIGiFVx6k8cIs6-Nd9HI2V0nKg82HnHkscvO31yA92fbbfuxkrS9PMsjzEiQOj-VnQrXWSsfUc4ZP2QDkoiOdGdzLbHRKcwiNHDS56-IoZoABe1y0pv_c_p96JM1d_tlVUfvO7PyHCkUqzt8ICr36sogR4CMH6AKCYmOmLNnSQ_XaIh79zzxs3UeWHdTY5Ny-HmcU4K4M2-r3i_nA5EYMJd3k5yg8CsGjJjPkTV-jqItgpNtecu8lU8y4STzclUdWYPXM");'>
+              </div>
+              <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+            </div>
+            <!-- Wide Item -->
+            <div class="group relative md:col-span-3 overflow-hidden rounded-xl bg-gray-200">
+              <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                data-alt="Панорамный вид современного завода"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLKyowIpCIGiFVx6k8cIs6-Nd9HI2V0nKg82HnHkscvO31yA92fbbfuxkrS9PMsjzEiQOj-VnQrXWSsfUc4ZP2QDkoiOdGdzLbHRKcwiNHDS56-IoZoABe1y0pv_c_p96JM1d_tlVUfvO7PyHCkUqzt8ICr36sogR4CMH6AKCYmOmLNnSQ_XaIh79zzxs3UeWHdTY5Ny-HmcU4K4M2-r3i_nA5EYMJd3k5yg8CsGjJjPkTV-jqItgpNtecu8lU8y4STzclUdWYPXM");'>
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+              </div>
+              <div
+                class="absolute bottom-6 left-6 translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <h3 class="text-lg font-bold text-white">Логистический центр</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action -->
+      <section class="py-20 bg-primary relative overflow-hidden">
+        <div
+          class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10">
+        </div>
+        <div class="layout-container mx-auto max-w-[960px] px-6 lg:px-12 text-center relative z-10">
+          <h2 class="text-3xl font-black text-white md:text-5xl tracking-tight mb-6">Готовы к сотрудничеству?</h2>
+          <p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
+            Свяжитесь с нами сегодня, чтобы обсудить ваш проект. Мы предложим лучшие условия и сроки для вашего бизнеса.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              class="bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg shadow-lg transition-transform hover:-translate-y-1">
+              Оставить заявку
+            </button>
+            <button
+              class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-bold py-4 px-8 rounded-lg transition-colors">
+              Скачать каталог
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#110a0a] text-white pt-20 pb-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+              <!-- Col 1 -->
+              <div>
+                  <div class="flex items-center gap-3 mb-6">
+                      <div class="size-8 text-primary">
+                          <span class="material-symbols-outlined !text-4xl">hexagon</span>
+                      </div>
+                      <span class="text-2xl font-extrabold tracking-tight">Alpro</span>
+                  </div>
+                  <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                      Ведущий производитель алюминиевого профиля в России. Инновации, качество и надежность с 2010
+                      года.
+                  </p>
+                  <div class="flex gap-4">
+                      <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors"
+                          href="#">
+                          <!-- Social Icon placeholder using text -->
+                          <span class="font-bold text-sm">VK</span>
+                      </a>
+                      <a class="size-10 rounded-full bg-white/5 hover:bg-primary flex items-center justify-center transition-colors"
+                          href="#">
+                          <span class="font-bold text-sm">TG</span>
+                      </a>
+                  </div>
+              </div>
+              <!-- Col 2 -->
+              <div>
+                  <h4 class="font-bold text-lg mb-6">Продукция</h4>
+                  <ul class="space-y-4 text-gray-400 text-sm">
+                      <li><a class="hover:text-primary transition-colors" href="#">Алюминиевый профиль</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Оконные системы</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Дверные системы</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Фасадные системы</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Интерьерные решения</a></li>
+                  </ul>
+              </div>
+              <!-- Col 3 -->
+              <div>
+                  <h4 class="font-bold text-lg mb-6">Компания</h4>
+                  <ul class="space-y-4 text-gray-400 text-sm">
+                      <li><a class="hover:text-primary transition-colors" href="#">О заводе</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Новости</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Карьера</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Сертификаты</a></li>
+                      <li><a class="hover:text-primary transition-colors" href="#">Контакты</a></li>
+                  </ul>
+              </div>
+              <!-- Col 4 -->
+              <div>
+                  <h4 class="font-bold text-lg mb-6">Контакты</h4>
+                  <ul class="space-y-4 text-gray-400 text-sm">
+                      <li class="flex items-start gap-3">
+                          <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                          <span>
+                            г.Турсунзода,
+                            
+                            Об. Сешанбе</span>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <span class="material-symbols-outlined text-primary text-lg">call</span>
+                          <a class="hover:text-white transition-colors" href="tel:+74950000000">+7 (495) 000-00-00</a>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                          <a class="hover:text-white transition-colors" href="mailto:info@alpro.ru">info@alpro.ru</a>
+                      </li>
+                      <li class="flex items-center gap-3">
+                          <span class="material-symbols-outlined text-primary text-lg">schedule</span>
+                          <span>Пн-Пт: 9:00 - 18:00</span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div
+              class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+              <p>© 2023 ООО «Алюмин Проф». Все права защищены.</p>
+              <div class="flex gap-6">
+                  <a class="hover:text-white transition-colors" href="#">Политика конфиденциальности</a>
+                  <a class="hover:text-white transition-colors" href="#">Пользовательское соглашение</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </div>
+</body>
+
+</html>
